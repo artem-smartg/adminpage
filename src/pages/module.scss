@@ -1,0 +1,45 @@
+.success__page {
+    width: 100%;
+    max-width: 1128px;
+    margin-top: 90px;
+
+    .success__title {
+        margin-bottom: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 37px;
+        letter-spacing: 0.5px;
+        color: #000000;
+    }
+
+    .success__text {
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+        color: #000000;
+        width: 825px;
+        text-align: center;
+    }
+
+    .success__btn {
+        background: rgba(122, 255, 151, 0.1);
+        border: 2px solid #7AFF97;
+        padding: 11px 65px;
+        border-radius: 26px;
+        font-family: 'Inter';
+        font-style: normal;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        color: #000000;
+    }
+}

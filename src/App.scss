@@ -1,0 +1,201 @@
+$black: #000000;
+$blue: #7AD6FF;
+$lightblue: #F3FBFF;
+
+.register{
+  margin: 3rem 0;
+  flex-direction: column;
+
+  h2{
+    margin-left: 5%;
+  }
+
+  .register__contents{
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+
+    .register__upBlock{
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+
+      .register__content{
+        display: flex;
+        flex-direction: column;
+  
+        .input{
+          color: $black;
+          margin: 1rem;
+          width: 331px;
+          height: 52px;
+          border-radius: 50px;
+          border: 1px solid $blue;
+          background-color: transparent;
+          padding-left: 2rem;
+          font-size: 1.5rem;
+        }
+  
+        .input::placeholder{
+          color: $black;
+        }
+      }
+    }
+  }
+
+  
+  .register__box{
+    justify-content: center;
+    width: 70%;
+
+    .checkbox__block{
+      margin: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      width: 331px;
+      height: 52px;
+
+      .checkbox__tap {
+        display: flex;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        margin-right: 0.75rem;
+        
+        .checkbox {
+          position: absolute;
+          left: -9999px;
+          &:checked + span {
+            background-color: mix(#fff, $blue, 84%);
+            &:before {
+              box-shadow: inset 0 0 0 0.4375em $blue;
+            }
+          }
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          font-size: 1.5rem;
+          padding: 0.375em 0.75em 0.375em 0.375em;
+          border-radius: 99em; // or something higher...
+          transition: 0.25s ease;
+          
+          &:hover {
+            background-color: mix(#fff, $blue, 84%);
+          }
+
+          &:before {
+            display: flex;
+            flex-shrink: 0;
+            content: "";
+            background-color: #fff;
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 50%;
+            margin-right: 0.375em;
+            transition: 0.25s ease;
+            box-shadow: inset 0 0 0 0.125em $blue;
+          }
+        }
+      }
+    }
+
+    .register__button_block{
+
+      .register__button{
+        color: $black;
+        margin: 1rem;
+        width: 331px;
+        height: 52px;
+        border-radius: 50px;
+        border: 1px solid $blue;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      .register__button:hover{
+        background-color: $lightblue;
+      }
+      .register__button:disabled{
+        background: #ccc;
+        opacity: .5;
+        transition: .4s;
+        border: #ccc ;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .register{
+    margin: 3rem 0 0;
+
+    h2{
+      font-size: 1.75rem;
+    }
+
+    .register__contents{
+
+      .register__upBlock{
+
+        .register__content{
+        
+          .input{
+            font-size: 1.2rem;
+          }
+        }
+      }
+      
+      .register__box{
+
+        .checkbox__block{
+
+          .checkbox__tap{
+            
+            span{
+              font-size: 1.3rem;
+            }
+          }
+        } 
+
+        .register__button{
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 500px) {
+  
+}
+
+@media screen and (max-width: 428px) {
+  
+}
+
+@media screen and (max-width: 414px) {
+  
+  
+}
+
+@media screen and (max-width: 375px) {
+  
+}
+
+@media screen and (max-width: 320px) {
+  
+}
+
